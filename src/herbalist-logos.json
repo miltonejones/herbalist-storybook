@@ -1,0 +1,17 @@
+{
+    "/img/logos": [
+        "img/logos/SalesPros.Logo.Stacked.1x.png",
+        "img/logos/SalesPros.Logo.Stacked.2x.png",
+        "img/logos/SalesPros.logo.color.1x.png",
+        "img/logos/SalesPros.logo.color.2x.png",
+        "img/logos/SalesPros.logo.white.1x.png", 
+        "img/logos/herbalistsp_logo2.svg",
+        "img/logos/logo-white.png", 
+        "img/logos/sp-logo-blue.png",
+        "img/logos/sp-logo-blue.svg"
+    ],
+    "/img/email": [ 
+        "img/email/_logo.png", 
+        "img/email/logo.png" 
+    ]
+}

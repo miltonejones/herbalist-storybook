@@ -1,0 +1,282 @@
+[
+    {
+        "from": "^_ui/css/(.*\\.)v[0-9.]+\\.(css)$",
+        "to": "/_ui/css/$1$2",
+        "flag": "L"
+    },
+    {
+        "from": "^_ui/js/(.*\\.)v[0-9.]+\\.(js)$",
+        "to": "/_ui/js/$1$2",
+        "flag": "L"
+    },
+    {
+        "from": "^(.*\\.)v[0-9.]+\\.(gif|png|jpg)$",
+        "to": "/$1$2",
+        "flag": "L"
+    },
+    {
+        "from": "^login/?$",
+        "to": "/login.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^logout/?$",
+        "to": "/logout.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^register/?$",
+        "to": "/",
+        "flag": "R"
+    },
+    {
+        "from": "^referral/?$",
+        "to": "/referral.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^terms/?$",
+        "to": "/terms.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^terms/accepted/?$",
+        "to": "/terms.php?accepted=true%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^terms/conduct/?$",
+        "to": "/terms_display.php?type=conduct%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^terms/contractor/?$",
+        "to": "/terms_display.php?type=contractor%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^maintenance/?$",
+        "to": "/maintenance.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^account/?$",
+        "to": "/account.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^account/stores/?$",
+        "to": "/availability/stores/",
+        "flag": "R"
+    },
+    {
+        "from": "^account/edit/?$",
+        "to": "/account_edit.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^password/reset/?$",
+        "to": "/password_reset.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^password/reset/([0-9a-zA-Z-_]+)/?$",
+        "to": "/password_reset.php?hash=$1%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^teamleader/?$",
+        "to": "/teamleader.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^teamleader/team/?$",
+        "to": "/teamleader_team.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^teamleader/approved/?$",
+        "to": "/teamleader_approved.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^saleskit/?$",
+        "to": "/saleskit.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^saleskit/wine/lot-([0-9a-zA-Z-_]+)?$",
+        "to": "/saleskit_wine_notes.php?lot_id=$1%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^saleskit/wine/wine-([0-9a-zA-Z-_]+)?$",
+        "to": "/saleskit_wine_notes.php?wine_id=$1%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^schedule/?$",
+        "to": "/schedule.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^schedule/team/?$",
+        "to": "/schedule_team.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^availability/?$",
+        "to": "/availability.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^invoices/?$",
+        "to": "/invoices.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^invoices/new/?$",
+        "to": "/invoice_new.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^invoices/edit/([0-9]+)/?$",
+        "to": "/invoice_edit.php?id=$1&%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^invoices/([0-9]+)/?$",
+        "to": "/invoice_view.php?id=$1&%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^user/([0-9]+)/?$",
+        "to": "/user.php?id=$1&%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/users/?$",
+        "to": "/admin_users.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/users/updated/?$",
+        "to": "/admin_users.php?%{QUERY_STRING}&updated=true",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/users/new/?$",
+        "to": "/admin_user_edit.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/users/([0-9]+)/?$",
+        "to": "/admin_user_edit.php?id=$1&%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/users/export/all/?$",
+        "to": "/admin_users_export.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/wine/?$",
+        "to": "/admin_wine.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/wine/producer/([0-9]+)/?$",
+        "to": "/admin_wine_producer.php?id=$1&%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/wine/client/([0-9]+)/?$",
+        "to": "/admin_wine_client.php?id=$1&%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/locations/?$",
+        "to": "/admin_locations.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/locations/([0-9]+)/?$",
+        "to": "/admin_locations_edit.php?costco_id=$1&%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^scheduler/?$",
+        "to": "/scheduler.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^scheduler/byrep/?$",
+        "to": "/scheduler_rep.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^scheduler/ioh/?$",
+        "to": "/scheduler_ioh.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/invoices/?$",
+        "to": "/admin_invoices.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/invoices/exports/?$",
+        "to": "/admin_invoices_exports.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/invoices/export/?$",
+        "to": "/admin_invoices_export.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/invoices/export/([0-9]+)/?$",
+        "to": "/admin_invoices_export_view.php?id=$1&%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^admin/reports/?$",
+        "to": "/admin_reports.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^login/?$",
+        "to": "/login.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^apply/?$",
+        "to": "/apply.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^badge/?$",
+        "to": "/fpdf/badge.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^overview/?$",
+        "to": "/overview.php?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^salespros_overview.pdf?$",
+        "to": "/data/sales_lit/overview.pdf?%{QUERY_STRING}",
+        "flag": "L"
+    },
+    {
+        "from": "^slir/(.*)$",
+        "to": "/slir/index.php",
+        "flag": "L"
+    },
+    {
+        "from": "^h",
+        "to": "/h/index.php",
+        "flag": "L"
+    }
+]

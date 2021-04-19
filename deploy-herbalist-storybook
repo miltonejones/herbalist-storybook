@@ -1,0 +1,2 @@
+npm run build-storybook
+aws s3 sync storybook-static/ s3://herbalistsp.miltonjones.nl/storybook/

@@ -1,0 +1,9 @@
+.LogoImageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content;
+    grid-gap: 6px;
+    gap: 6px;
+    padding: 2px;
+}
